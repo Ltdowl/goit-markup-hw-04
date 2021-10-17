@@ -21,6 +21,7 @@
   --box-team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --image-background: rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4);
   --color-not-img:#C4C4C4;
+  --icon-not-active:#AFB1B8;
 }
 h1,
 h2,
@@ -67,21 +68,17 @@ header .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section:nth-child(1){ 
+.section.title-section { 
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  
   
   background-image: linear-gradient( var(--image-background) ), url(../images/bg.jpg);
 
   background-repeat: no-repeat;
   background-color: var(--color-not-img);
   padding-top: 200px;
-  padding-bottom: 200px;
-  
-  
-  
+  padding-bottom: 200px;  
 }
 
 .section:nth-child(2){
@@ -114,6 +111,7 @@ header .container {
 }
 .header-link {
   display: block;
+  
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -126,6 +124,7 @@ header .container {
 .site-nav,
 .site-contact {
   display: flex;
+ 
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -150,6 +149,8 @@ header .container {
 }
 .site-contact .link {
   color: var(--secondary-text-color);
+  
+  
 }
 .site-contact,
 .link:hover,
@@ -158,8 +159,80 @@ header .container {
   color: var(--accent-color);
 }
 .title-section {
-  
   text-align: center;
+}
+
+
+.site-contact .list:hover,
+.site-contact .list:focus {
+  
+ fill:var(--accent-color);
+ 
+}
+.icon-link {
+  
+}
+
+.icon-feature {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.icon-feature .icon {
+  
+  width: 65px;
+  height: 65px;
+}
+
+
+.team-icons {
+ 
+}
+
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  
+}
+.list-social {
+  list-style: none;
+  margin-right: 10px;
+}
+.list-social:last-child {
+  margin-right: 0;
+}
+.link-button {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  
+  
+  
+}
+
+.icon-social {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  fill: var(--icon-not-active);
+  outline: 1px solid red;
+
+}
+
+
+.icon-social:hover,
+.icon-social:focus,
+.link-button:focus,
+.link-button:hover {
+  fill: var(--primary-white-color);
+  
+  background-color: var(--accent-color);
+  
+
+ 
+
 }
 
 .title-name {
@@ -291,6 +364,7 @@ header .container {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 .section.portfolio {
   padding-top: 94px;
@@ -365,4 +439,9 @@ header .container {
 .footer-item-text:hover,
 .footer-item-text:focus {
   color: var(--accent-color);
+}
+
+
+.footer-connect {
+  
 }
