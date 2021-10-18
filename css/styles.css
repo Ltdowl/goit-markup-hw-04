@@ -112,7 +112,7 @@ header .container {
 }
 .header-link {
   display: block;
-  
+  outline: 1px solid red;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -153,27 +153,33 @@ header .container {
   
   
 }
-.site-contact,
-.link:hover,
-.site-contact,
-.link:focus {
-  color: var(--accent-color);
-}
+
+
 .title-section {
   text-align: center;
 }
 
 
-.site-contact .list:hover,
-.site-contact .list:focus {
-  
- fill:var(--accent-color);
- 
-}
+
 .icon-link {
-  
+ width: 16px;
+ height: 16px;
+ 
+   fill: var(--secondary-text-color);
 }
 
+.header-link .icon-link:hover,
+.header-link .icon-link:focus {
+ fill: var(--accent-color);
+
+}
+.site-contact,
+.link:hover,
+.site-contact,
+.link:focus {
+  color: var(--accent-color);
+ 
+}
 .icon-feature {
   display: flex;
   background-color: var(--grey-background-color);
@@ -213,7 +219,7 @@ header .container {
   width: 44px;
   height: 44px;
   padding: 0;
-  background-color: springgreen;
+
 }
 
 .icon-social {
@@ -234,7 +240,7 @@ header .container {
 .link-button:hover {
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
-  border-radius: 50%;
+  
 }
 
 .title-name {
