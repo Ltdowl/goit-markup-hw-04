@@ -445,19 +445,19 @@ a:focus .icon-social {
 
 .footer-block {
   display: flex;
- outline: 2px solid red;
+ 
  
 }
 
 .footer-left {
 display: inline-block;
-  outline: 2px solid red;
+  
   margin-right: 70px;
 
 }
 .footer-center {
 display: inline-block;
-outline: 2px solid red;
+
 }
 .footer-center p {
 font-weight: bold;
