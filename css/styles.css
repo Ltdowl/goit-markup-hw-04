@@ -23,6 +23,7 @@
   --image-background: rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4);
   --color-not-img: #c4c4c4;
   --icon-not-active: #afb1b8;
+  --icon-footer:rgba(255, 255, 255, 0.1);
 }
 h1,
 h2,
@@ -411,6 +412,8 @@ a:focus .icon-social {
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
+
+
 .footer-content {
   background-color: var(--primary-dark-color);
   padding-top: 60px;
@@ -437,5 +440,56 @@ a:focus .icon-social {
   color: var(--accent-color);
 }
 
-.footer-connect {
+
+
+
+.footer-block {
+  display: flex;
+ outline: 2px solid red;
+ 
+}
+
+.footer-left {
+display: inline-block;
+  outline: 2px solid red;
+  margin-right: 70px;
+
+}
+.footer-center {
+display: inline-block;
+outline: 2px solid red;
+}
+.footer-center p {
+font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primary-white-color);
+margin-bottom: 20px;
+}
+
+
+.icon-footer {  
+  fill: var(--primary-white-color)
+  
+}
+
+.button-footer-icon {  
+  
+  background-color: var(--icon-footer);
+  border-radius: 100%;
+  
+}
+a:hover .icon-footer,
+a:focus .icon-footer {
+  fill: var(--primary-white-color);
+}
+
+.link-button:hover,
+.link-button:focus {
+  fill: var(--icon-not-active);
+  background-color: var(--accent-color);
+  border-radius: 100%;
+ 
 }
