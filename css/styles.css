@@ -18,6 +18,8 @@
   --color-border-header: #ececec;
   --grey-background-color: #f5f4fa;
   --border-card: 1px solid #eeeeee;
+  --border-clients: 1px solid #AFB1B8;
+  --border-clients-active: 1px solid #2196F3;
   --box-team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --image-background: rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4);
@@ -440,13 +442,53 @@ a:focus .icon-social {
   color: var(--accent-color);
 }
 
+.clients-icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+
+}
+
+.list-icons {
+  
+  flex-basis: calc(100% / 6 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.icon-union {
+  fill: var(--icon-not-active);
+
+}
+.clients-block {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  box-sizing: border-box;
+  border: var(--border-clients);
+  
+  border-radius: 4px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.clients-block .icon-union {
+  margin-left: auto;
+  margin-right: auto;
+}
+.clients-block:hover .icon-union,
+.clients-block:focus .icon-union {
+  fill: var(--accent-color);
+}
+.clients-block:hover,
+.clients-block:focus{
+  border: var(--border-clients-active);
+}
+
 
 
 
 .footer-block {
   display: flex;
- 
- 
 }
 
 .footer-left {
