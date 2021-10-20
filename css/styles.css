@@ -85,6 +85,8 @@ header .container {
 
   background-repeat: no-repeat;
   background-color: var(--color-not-img);
+  background-position: center;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -171,29 +173,29 @@ a:focus .icon-link {
 }
 .icon-link {
   display: flex;
-
   margin-right: 10px;
-
   fill: var(--secondary-text-color);
 }
 
 .team-list {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
-.list-social {
-  display: flex;
 
+.list-social {
   list-style: none;
   margin-right: 10px;
-  border: none;
+  
 }
 .list-social:last-child {
   margin-right: 0;
 }
 
 .link-button {
-  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
 }
@@ -296,16 +298,15 @@ a:focus .icon-social {
 
 .icon-feature {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--grey-background-color);
   border-radius: 4px;
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 30px;
 }
-.icon-feature .icon {
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .occupation {
   display: flex;
@@ -405,7 +406,7 @@ a:focus .icon-social {
 .portfolio-block:hover,
 .portfolio-block:focus {
   cursor: pointer;
-  border: var(--border-card);
+  
   box-sizing: border-box;
   box-shadow: var(--portfolio-shadow);
 }
@@ -455,13 +456,13 @@ a:focus .icon-social {
 .link-block {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   width: 170px;
   height: 92px;
 
   border: var(--border-clients);
-  padding-top: 16px;
-  padding-bottom: 16px;
+  
   border-radius: 4px;
 }
 
@@ -472,10 +473,12 @@ a:focus .icon-social {
 .link-block:hover,
 .link-block:focus {
   border: var(--border-clients-active);
+  fill: var(--accent-color);
 }
 
 .footer-block {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-left {
@@ -485,6 +488,7 @@ a:focus .icon-social {
 }
 .footer-center {
   display: inline-block;
+  
 }
 .footer-center p {
   font-weight: bold;
