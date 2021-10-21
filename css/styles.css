@@ -402,13 +402,13 @@ a:focus .icon-social {
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
+.link-card {
+  display: block;
+}
 
-.portfolio-block:hover,
-.portfolio-block:focus {
-  cursor: pointer;
-  
-  box-sizing: border-box;
-  box-shadow: var(--portfolio-shadow);
+.link-card:hover,
+.link-card:focus {
+   box-shadow: var(--portfolio-shadow);
 }
 
 .footer-content {
